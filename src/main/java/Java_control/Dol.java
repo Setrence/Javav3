@@ -7,4 +7,8 @@ public class Dol extends Toy_standart{
         super(name, quantity, 20);
     }
 
+    @Override
+    public String toString() {
+        return "Dol:"  + name + "; количество: 1шт; выпала с вероятностью: " + weight;
+    }
 }

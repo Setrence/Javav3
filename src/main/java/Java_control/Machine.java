@@ -1,8 +1,6 @@
 package Java_control;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -37,11 +35,13 @@ public class Machine implements Toy_machine {
     }
 
     @Override
-    public void extradition(ArrayList<Toy_standart> list) {
-        File myFile = new File("Extradition_log.txt");
-        FileOutputStream outputStream = new FileOutputStream(myFile);
-        byte[] buffer = "Hello, world!".getBytes();
-        outputStream.write(buffer);
-        outputStream.close();
+    public void extradition(ArrayList<Toy_standart> list2) throws IOException {
+
+        File file = new File("extradition.txt");
+        PrintWriter pw = new PrintWriter(new FileWriter(file, true));
+
+        pw.println (list2.get(0).toString());
+        pw.close();
+
     }
 }

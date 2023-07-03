@@ -1,6 +1,8 @@
 package Java_control;
 
-abstract class Toy_standart {
+import java.io.Serializable;
+
+abstract class Toy_standart implements Serializable {
     protected String name;
     protected int quantity;
     protected int weight;
@@ -29,5 +31,10 @@ abstract class Toy_standart {
 
     public void setWeight(int weight) {
         this.weight = weight;
+    }
+
+    @Override
+    public String toString() {
+        return "";
     }
 }
