@@ -9,6 +9,7 @@ public class Dol extends Toy_standart{
 
     @Override
     public String toString() {
-        return "Dol:"  + name + "; количество: 1шт; выпала с вероятностью: " + weight;
+        return "Dol:"  + name + "; количество: 1шт; выпала с вероятностью: " + weight + "\n";
     }
+
 }

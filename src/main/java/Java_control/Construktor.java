@@ -6,6 +6,8 @@ public class Construktor extends Toy_standart{
     }
     @Override
     public String toString() {
-        return "Construktor: " + name + "; количество: 1шт; выпал с вероятностью: " + weight;
+        return "Construktor: " + name + "; количество: 1шт; выпал с вероятностью: " + weight + "\n";
     }
+
+
 }

@@ -7,6 +7,8 @@ public class Robot extends Toy_standart {
 
     @Override
     public String toString() {
-        return "Robot: " + name + "; количество: 1шт; выпал с вероятностью: " + weight;
+        return "Robot: " + name + "; количество: 1шт; выпал с вероятностью: " + weight + "\n";
     }
+
+
 }
