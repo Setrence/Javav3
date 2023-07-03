@@ -12,6 +12,12 @@ public class Main {
 
         machine.raffle(machine.list, machine.list2);
         machine.raffle(machine.list, machine.list2);
+        machine.raffle(machine.list, machine.list2);
+        machine.raffle(machine.list, machine.list2);
+        machine.raffle(machine.list, machine.list2);
+        machine.raffle(machine.list, machine.list2);
+        machine.raffle(machine.list, machine.list2);
+        machine.raffle(machine.list, machine.list2);
 
 
     }

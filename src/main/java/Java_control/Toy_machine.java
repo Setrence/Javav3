@@ -9,5 +9,5 @@ public interface Toy_machine {
 
     void raffle (ArrayList <Toy_standart> list, ArrayList <Toy_standart> list2);
 
-
+    void extradition (ArrayList <Toy_standart> list);
 }
