@@ -19,4 +19,6 @@ public interface Toy_machine {
     void toys_in_machite (ArrayList <Toy_standart> list);
 
     void toys_not_extradition (ArrayList <Toy_standart> list2);
+
+    void add_toys (int number, int quentity, int weight);
 }

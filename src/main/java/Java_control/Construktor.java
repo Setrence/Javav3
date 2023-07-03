@@ -1,8 +1,8 @@
 package Java_control;
 
 public class Construktor extends Toy_standart{
-    public Construktor(String name, int quantity) {
-        super(name, quantity, 40);
+    public Construktor(String name, int quantity, int weight) {
+        super(name, quantity, weight);
     }
     @Override
     public String toString() {
