@@ -36,16 +36,18 @@ public class Machine implements Toy_machine {
 
     @Override
     public void extradition(ArrayList<Toy_standart> list2) throws IOException {
+        if (this.list2.size() == 0) {
+            System.out.println("Игрушки на выдачу отсутствуют, сначала необходимо их розыграть :)");
+        } else{
+            File file = new File("extradition.txt");
+            PrintWriter pw = new PrintWriter(new FileWriter(file, true));
 
-        File file = new File("extradition.txt");
-        PrintWriter pw = new PrintWriter(new FileWriter(file, true));
+            pw.println(this.list2.get(0).toString());
+            pw.close();
 
-        pw.println (this.list2.get(0).toString());
-        pw.close();
-
-        System.out.printf("Вы забрали: %s\n", list2.get(0).toString());
-        this.list2.remove(0);
-
+            System.out.printf("Вы забрали: %s\n", list2.get(0).toString());
+            this.list2.remove(0);
+        }
     }
 
     @Override
